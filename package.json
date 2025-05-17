@@ -1,0 +1,23 @@
+{
+  "name": "p5-storymaker",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/openai": "^2.0.0",
+    "@shoelace-style/shoelace": "^2.19.1",
+    "jspdf": "^2.5.2",
+    "openai": "^4.100.0",
+    "p5": "^1.11.2",
+    "vite": "^6.0.7",
+    "zod": "^3.24.1"
+  }
+}

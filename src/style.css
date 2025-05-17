@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sl-font-sans);
+}
+
+canvas {
+  display: block;
+}
+
+#captionInput {
+  width: 70%;
+  padding: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+#canvasContainer {
+  width: 640px;
+  height: 480px;
+  margin: 5px auto;
+  border: 1px solid var(--sl-color-neutral-200);
+  border-radius: var(--sl-border-radius-medium);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Add styles for the header with settings button */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p5-logo {
+  margin-right: 10px;
+  fill: #ED225D; /* P5.js brand color */
+  vertical-align: middle;
+}
+
+.settings-button {
+  --sl-button-padding-x: 0.5rem;
+}
+
+.play-button {
+  margin-left: auto;
+}
+
+.figure-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.scene-navigation {
+  display: flex;
+  justify-content: center;
+  margin: .1rem 0;
+}
+
+sl-textarea::part(textarea) {
+  min-height: 100px;
+}
+
+#storylineInput::part(textarea) {
+  min-height: 100px;
+}
+
+.generate-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#generateSpinner {
+  font-size: 1.5rem;
+}
+
+sl-radio-group::part(form-control-label) {
+  margin-bottom: 0;
+}
+
+sl-radio-group {
+  margin-left: 1rem;
+}
+
+#storylineInput {
+  margin-bottom: 1rem;
+}
+
+sl-switch {
+  --width: 40px;
+  margin-left: 1rem;
+}
+
+sl-switch::part(label) {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--sl-color-neutral-700);
+}
+
+sl-dialog::part(body) {
+  padding: 2rem;
+}
+
+sl-dialog::part(footer) {
+  padding: 1rem;
+}
+
+#apiKeyInput {
+  width: 100%;
+}
+
+/* Add styles for settings dialog */
+#settingsDialog sl-radio-group {
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+}
+
+#settingsDialog sl-radio-group::part(form-control-label) {
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: var(--sl-font-weight-semibold);
+  font-size: var(--sl-font-size-medium);
+}
+
+#settingsDialog sl-radio-button {
+  margin-right: 0;
+}
+
+#settingsDialog sl-radio-button:first-of-type {
+  margin-right: 0.5rem;
+}
+
+#openaiSettings, #azureSettings {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--sl-color-neutral-200);
+  border-radius: var(--sl-border-radius-medium);
+}
+
+#azureApiKeyInput, #azureEndpointInput, #apiKeyInput {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+sl-radio::part(base) {
+  margin-right: 0.5rem;
+}
